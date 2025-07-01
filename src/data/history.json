@@ -1,0 +1,18 @@
+[
+  {
+    "role": "Software Engineer",
+    "organisation": "Attentionkart",
+    "startDate": "Feb, 2022",
+    "endDate": "Mar 2023",
+    "experiences": [" Developed & maintained a responsive emotional analysis web app using React.js "],
+    "imageSrc": "history/Attentionkart.png"
+  },
+  {
+    "role": "AI Research Intern",
+    "organisation": "Attentionkart",
+    "startDate": "Sep, 2021",
+    "endDate": "Feb, 2022",
+    "experiences": [" Supported training of AI models.", "Built test interfaces using React"],
+    "imageSrc": "history/Attentionkart.png"
+  }
+]
