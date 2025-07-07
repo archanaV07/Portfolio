@@ -7,9 +7,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 100vw;
   padding: 58px 10%;
   gap: 10px;
+  width: 100%;  
+  box-sizing: border-box;
 }
 
 .text p {
@@ -24,12 +25,14 @@
   align-items: center;
   list-style: none;
   gap: 150px;
+  max-width: 800px;
 }
 
 .link {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 10px;
+  justify-content:baseline;
 }
 
 .link a {
@@ -42,8 +45,11 @@
 
 @media screen and (max-width: 830px) {
   .container {
+    padding-left: 0;
+    padding-right: 0;
     flex-direction: column;
     gap: 23px;
+    justify-content: space-around;
   }
 
   .text {
@@ -54,5 +60,7 @@
 
   .links {
     align-items: center;
+    flex-direction: column;
+    gap: 10px;
   }
 }

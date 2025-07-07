@@ -4,7 +4,7 @@ import styles from "./Courses.module.css";
 const Courses = () => {
   return (
     <>
-        <section className = {styles.container} id="about">
+        <section className = {styles.container} id="courses">
             <h2 className = {styles.title}> Certification Courses </h2>
             <div className={styles.content}>
              <img  src={"../assets/courses/course.png"} alt="me working" className = {styles.aboutImage}/>
