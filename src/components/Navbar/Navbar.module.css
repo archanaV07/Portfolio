@@ -15,6 +15,7 @@
     font-weight: 600;
     text-decoration: none;
     color: var(--color-text);
+    padding-right: 80px;
 }
 
 .menu {
