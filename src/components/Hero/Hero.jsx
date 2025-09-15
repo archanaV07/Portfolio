@@ -8,7 +8,7 @@ const Hero = () => {
                     Hi, Am Archana Vishwanath
                 </h1>
                 <p className={styles.description}> Am a Frontend developer with 1 year of experience.</p>
-                <a href="archanavishwanath06@gmail.com"className={styles.contactBtn}> Contact Me</a>
+                {/* <a href="#contactform"className={styles.contactBtn}> Contact Me</a> */}
             </div>
             <img src={"../assets/hero/heroImage.png"} alt="me" className={styles.heroImg}>
            </img>
