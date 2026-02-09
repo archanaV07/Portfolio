@@ -1,50 +1,32 @@
-# 🍕 Food Delivery App
+# 🌐 Personal Portfolio
 
-A modern food delivery web application that allows users to browse restaurants, view menus, add items to cart, and place orders seamlessly. Built with React to provide a fast, responsive, and user-friendly experience.
+A personal portfolio website showcasing my skills, projects, and experience as a developer. This portfolio is designed to highlight my work, provide information about me, and make it easy to get in touch.
+
 ---
 
-## 🚀 Features
+## ✨ Features
 
-- 🏪 Browse food items
-- 📋 View detailed menus
-- 🛒 Add / remove items from cart
-- 💰 Real-time price calculation
-- 🔍 Search and filter food items
+- 👋 Introduction and About Me section
+- 🧑‍💻 Skills and technologies overview
+- 📂 Projects showcase with live/demo links
 - 📱 Fully responsive design
-- ⚡ Fast and smooth UI with React
+- ⚡ Fast and modern UI
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React, JavaScript (ES6)
+- **Frontend:** React
 - **Styling:** CSS 
-- **State Management:** React Hooks / Context API
-- **Routing:** React Router
-- **Package Manager:** npm
+- **Routing:** React Router )
+- **Animations:** Framer Motion 
+- **Deployment:** Netlify / GitHub Pages
 
 ---
 
-## 📦 Installations
+## 📦 Installation
 
+Clone the repository:
 
 ```bash
-
-**CLONE THE REPOSITORY**
-git clone https://github.com/archanaV07/food_del_app.git
-
----
-
-**NAVIGATE TO PROJECT DIRECTORY**
-cd food-delivery-app
-
-**INSTALL DEPENDENCIES**
-npm install
-
-**RUN THE APP LOCALLY**
-npm run dev
-
-**THE APPLICATION WILL START ON**
-http://localhost:5173/
-
-
+git clone https://github.com/your-username/portfolio.git
