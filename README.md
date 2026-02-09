@@ -1,12 +1,50 @@
-# React + Vite
+# 🍕 Food Delivery App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern food delivery web application that allows users to browse restaurants, view menus, add items to cart, and place orders seamlessly. Built with React to provide a fast, responsive, and user-friendly experience.
+---
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🏪 Browse food items
+- 📋 View detailed menus
+- 🛒 Add / remove items from cart
+- 💰 Real-time price calculation
+- 🔍 Search and filter food items
+- 📱 Fully responsive design
+- ⚡ Fast and smooth UI with React
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **Frontend:** React, JavaScript (ES6)
+- **Styling:** CSS 
+- **State Management:** React Hooks / Context API
+- **Routing:** React Router
+- **Package Manager:** npm
+
+---
+
+## 📦 Installations
+
+
+```bash
+
+**CLONE THE REPOSITORY**
+git clone https://github.com/archanaV07/food_del_app.git
+
+---
+
+**NAVIGATE TO PROJECT DIRECTORY**
+cd food-delivery-app
+
+**INSTALL DEPENDENCIES**
+npm install
+
+**RUN THE APP LOCALLY**
+npm run dev
+
+**THE APPLICATION WILL START ON**
+http://localhost:5173/
+
+
