@@ -2,21 +2,46 @@
 
 .container {
   color: var(--color-text);
-  margin-top: 120px;
-  background-color: var(--color-secondary);
+  margin-top: var(--spacing-4xl);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  padding: 58px 10%;
-  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  padding: var(--spacing-4xl) var(--spacing-3xl);
+  gap: var(--spacing-3xl);
   width: 100%;  
   box-sizing: border-box;
+  box-shadow: var(--shadow-xl);
+  animation: fadeInUp 0.8s ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(0, 212, 255, 0.2) 0%, transparent 70%);
+  border-radius: var(--radius-full);
+  animation: float 8s ease-in-out infinite;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  z-index: 1;
 }
 
 .text p {
-  font-size: 40px;
-  font-weight: 400;
-  letter-spacing: 2px;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--color-text);
 }
 
 .links {
@@ -24,43 +49,57 @@
   flex-direction: row;
   align-items: center;
   list-style: none;
-  gap: 150px;
-  max-width: 800px;
+  gap: var(--spacing-3xl);
+  z-index: 1;
+  flex-wrap: wrap;
 }
 
 .link {
   display: flex;
   align-items: center;
-  gap: 10px;
-  justify-content:baseline;
+  gap: var(--spacing-md);
+  justify-content: center;
+  transition: all var(--transition-base);
 }
 
 .link a {
   color: var(--color-text);
   text-decoration: none;
-  font-size: 30px;
-  font-weight: 400;
-  letter-spacing: 1.5px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all var(--transition-base);
+}
+
+.link:hover a {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
 }
 
 @media screen and (max-width: 830px) {
   .container {
-    padding-left: 0;
-    padding-right: 0;
+    padding: var(--spacing-2xl) var(--spacing-xl);
     flex-direction: column;
-    gap: 23px;
-    justify-content: space-around;
+    gap: var(--spacing-2xl);
+    justify-content: center;
   }
 
   .text {
-    display: flex;
-    flex-direction: column;
     align-items: center;
+  }
+
+  .text p {
+    font-size: clamp(1rem, 4vw, 1.75rem);
   }
 
   .links {
     align-items: center;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+    gap: var(--spacing-lg);
+    justify-content: center;
+  }
+
+  .link a {
+    font-size: 1.25rem;
   }
 }

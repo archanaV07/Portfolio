@@ -1,77 +1,120 @@
 @import "../../vars.css";
 
 .navbar {
-    position: relative;
+    position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 61px;
-    z-index: 2;
-    margin: 0 10%;
+    padding: var(--spacing-lg) var(--spacing-3xl);
+    z-index: 100;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(87, 108, 188, 0.2);
+    box-shadow: var(--shadow-md);
+    animation: fadeInDown 0.6s ease-out;
 }
 
 .title {
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 1.75rem;
+    font-weight: 700;
     text-decoration: none;
     color: var(--color-text);
-    padding-right: 80px;
+    padding-right: var(--spacing-3xl);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent-3) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: transform var(--transition-base);
+}
+
+.title:hover {
+    transform: translateY(-2px);
 }
 
 .menu {
     display: flex;
+    align-items: center;
+    gap: var(--spacing-xl);
 }
 
 .menuItems {
-  display: flex;
-  gap: 47px;
-  list-style: none;
-}
-/* To hide menubar */
-/* .menuItems{
-    position: absolute;
-    display: none;
-    right: 0px;
-    z-index: 1;
-} */
-.menuItems a {
-  text-decoration: dotted;
-   color: var(--color-text );
-   font-size: 25px;
+    display: flex;
+    gap: var(--spacing-2xl);
+    list-style: none;
 }
 
-@media screen and (max-width:830px){
-    .navbar{
+.menuItems a {
+    text-decoration: none;
+    color: var(--color-text-secondary);
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+    transition: color var(--transition-base);
+    letter-spacing: 0.5px;
+}
+
+.menuItems a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-accent-3));
+    transition: width var(--transition-base);
+}
+
+.menuItems a:hover {
+    color: var(--color-text);
+}
+
+.menuItems a:hover::after {
+    width: 100%;
+}
+
+@media screen and (max-width: 830px) {
+    .navbar {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        padding: var(--spacing-lg);
+    }
+
+    .title {
+        padding-right: 0;
+        margin-bottom: var(--spacing-lg);
+        font-size: 1.5rem;
     }
 
     .menu {
-        position: absolute;
+        position: fixed;
         right: 0;
-        margin-right: 10%;
-         flex-direction: column;
+        margin-right: var(--spacing-lg);
+        flex-direction: column;
         align-items: flex-end;
-        gap: 11px;
+        gap: var(--spacing-md);
         z-index: 3;
     }
 
-    
     .menuItems {
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: left;
-        gap: 13px;
-        border-radius: 10px;
-        background: (25, 55, 109);
-        background: linear-gradient(
-            0deg, 
-            rgba(25, 55, 109, 0.2)0%,
-            rgba(25, 55, 109, 1)100%
-            );
-            padding: 24px 33px;
-            box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+        text-align: center;
+        gap: var(--spacing-lg);
+        border-radius: var(--radius-lg);
+        background: var(--glass-bg);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(87, 108, 188, 0.3);
+        padding: var(--spacing-xl);
+        box-shadow: var(--shadow-lg);
+    }
 
+    .menuItems a {
+        font-size: 0.95rem;
+    }
+
+    .menuItems a::after {
+        display: none;
     }
 }

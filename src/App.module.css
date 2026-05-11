@@ -1,9 +1,29 @@
 @import "./vars.css";
 
 .App {
-  background-color: var(--color-bg);
+  background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-bg-secondary) 100%);
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: var(--spacing-4xl);
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Background Elements */
+.App::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  padding-bottom: 50px;
-  overflow: hidden;
+  background: radial-gradient(circle at 20% 50%, rgba(87, 108, 188, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 80% 80%, rgba(0, 212, 255, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.App > * {
+  position: relative;
+  z-index: 1;
 }

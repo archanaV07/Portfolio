@@ -22,9 +22,9 @@ const About = () => {
             <li className={styles.aboutItem}>
                 <img src ={"../assets/about/cursorIcon.png"}/>
                 <div className = {styles.aboutItemText}>
-                    <h3> Freelance tranier  </h3>
+                    <h3> Freelance trainner  </h3>
                     <p>
-                        Experienced freelancer and trainer with expertise in React, Flutter/Dart, and Soft Skills development,. 
+                        Experienced freelancer and trainner with expertise in React, Flutter/Dart, and Soft Skills development. 
                     </p>
                 </div>
             </li>

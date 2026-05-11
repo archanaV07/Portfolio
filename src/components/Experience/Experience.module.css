@@ -2,101 +2,138 @@
 
 .container {
   color: var(--color-text);
-  margin-top: 79px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-top: var(--spacing-4xl);
+  margin-left: 5%;
+  margin-right: 5%;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .title {
   color: var(--color-text);
-  font-size: 35px;
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
   font-weight: 700;
-  letter-spacing: 1.75px;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  padding-bottom: 5%;
+  background: linear-gradient(135deg, var(--color-text) 0%, var(--color-accent-3) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--spacing-2xl);
 }
-.p{
-    text-align: center;
-    font-size: 23px;
-    padding-top: 15%;
+
+.p {
+  text-align: center;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  color: var(--color-text-secondary);
+  padding-bottom: var(--spacing-2xl);
 }
 
 .content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-3xl);
+  margin-top: var(--spacing-xl);
 }
 
 .skills {
-  width: 45%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 37px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: var(--spacing-xl);
 }
 
 .skill {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 11px;
+  gap: var(--spacing-md);
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .skillImageContainer {
-  background-color: var(--color-secondary);
-  border-radius: 100%;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  border-radius: var(--radius-full);
   display: flex;
   align-items: center;
   justify-content: center;
   width: 120px;
   height: 120px;
+  box-shadow: var(--shadow-lg);
+  transition: all var(--transition-base);
+  border: 2px solid rgba(87, 108, 188, 0.3);
+}
+
+.skillImageContainer:hover {
+  transform: scale(1.1) translateY(-4px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--color-accent-3);
 }
 
 .skillImageContainer img {
-  width: 75px;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
 }
 
 .skill p {
-  font-size: 25px;
+  font-size: 0.95rem;
   font-family: var(--font-roboto);
   font-weight: 500;
+  text-align: center;
+  color: var(--color-text-secondary);
 }
 
 .history {
-  width: 45%;
+  width: 100%;
   display: flex;
   text-align: justify;
   flex-direction: column;
-  gap: 140px;
+  gap: var(--spacing-2xl);
 }
 
 .historyItem {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 27px;
-  border-radius: 10px;
-  padding: 24px;
-  /* background: #0b2447;
-  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
-  background-image: linear-gradient(
-    90deg,
-    rgba(165, 215, 232, 0.42) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  background-size: 0 100%;
-  background-repeat: no-repeat;
-  transition: 0.4s; */
-  background: #19376d;
-  background: linear-gradient(
-    90deg,
-   #19376d 0%,
-   rgba(25, 55, 109, 0) 100%);
+  flex-direction: column; ;
+  align-items: flex-start;
+  gap: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  background: linear-gradient(135deg, rgba(87, 108, 188, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
+  border: 1px solid rgba(87, 108, 188, 0.2);
+  transition: all var(--transition-base);
+  animation: fadeInUp 0.8s ease-out;
 }
-/* 
+
 .historyItem:hover {
-  background-size: 100% 100%;
-} */
+  transform: translateY(-4px);
+  border-color: rgba(87, 108, 188, 0.5);
+  box-shadow: var(--shadow-lg);
+  background: linear-gradient(135deg, rgba(87, 108, 188, 0.2) 0%, rgba(0, 212, 255, 0.1) 100%);
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    margin-left: var(--spacing-xl);
+    margin-right: var(--spacing-xl);
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2xl);
+  }
+
+  .skills {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .history {
+    gap: var(--spacing-xl);
+  }
+
+  .historyItem {
+    flex-direction: column;
+  }
+}
 
 .historyItem img {
   width: 50px;
@@ -104,6 +141,7 @@
 
 .historyItemDetails {
   font-family: var(--font-roboto);
+   flex-direction: column; ;
 }
 
 

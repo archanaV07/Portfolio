@@ -1,26 +1,42 @@
 @import "../../vars.css";
 
 .container {
-  margin-top: 76px;
+  margin-top: var(--spacing-4xl);
   color: var(--color-text);
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .title {
-  font-size: 35px;
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
   font-weight: 700;
-  letter-spacing: 1.75px;
+  letter-spacing: 2px;
   text-transform: uppercase;
+  background: linear-gradient(135deg, var(--color-text) 0%, var(--color-accent-3) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--spacing-2xl);
 }
 
 .projects {
-  margin-top: 37px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
+  margin-top: var(--spacing-2xl);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--spacing-2xl);
   width: 100%;
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    margin-left: var(--spacing-xl);
+    margin-right: var(--spacing-xl);
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
 }
