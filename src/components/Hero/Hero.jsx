@@ -7,7 +7,9 @@ const Hero = () => {
                 <h1 className={styles.title}>
                     Hi, Am Archana Vishwanath
                 </h1>
-                <p className={styles.description}> Am a Frontend developer with experience in building scalable, responsive and user-friendly applications.</p>
+                <p className={styles.description}> Frontend Developer specializing in building scalable, responsive, and user-friendly React applications. Experienced freelancer and trainer with expertise in React, Flutter/Dart, PEGA and soft skills development, passionate about creating impactful digital solutions and empowering others through training and mentorship.
+
+                </p>
                 {/* <a href="#contactform"className={styles.contactBtn}> Contact Me</a> */}
             </div>
             <img src={"../assets/hero/heroImage.png"} alt="me" className={styles.heroImg}>

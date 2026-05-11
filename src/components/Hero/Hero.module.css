@@ -35,8 +35,11 @@
 
 .description {
     font-family: var(--font-roboto);
-    font-size: 30px;
-    margin-bottom: 52px;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 50px;
+    column-gap: 450px;
+    margin-top: 95px;
 }
 
 .contactBtn {
