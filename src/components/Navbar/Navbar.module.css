@@ -27,7 +27,13 @@
   gap: 47px;
   list-style: none;
 }
-
+/* To hide menubar */
+/* .menuItems{
+    position: absolute;
+    display: none;
+    right: 0px;
+    z-index: 1;
+} */
 .menuItems a {
   text-decoration: dotted;
    color: var(--color-text );
