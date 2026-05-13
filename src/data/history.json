@@ -4,7 +4,13 @@
     "organisation": "Attentionkart",
     "startDate": "Feb, 2022",
     "endDate": "Mar 2023",
-    "experiences": [" Developed & maintained a responsive emotional analysis web app using React.js "],
+    "experiences": [
+      "Developed and maintained a single-page AI-powered emotional analysis web app using React.js, improving user engagement by 30%.",
+      "Built and maintained over 10 reusable and accessible UI components using Material-UI and custom styles, reducing dev time by 25%.",
+      "Conducted cross-browser and responsive testing across Chrome, Firefox, Safari, and Edge, ensuring consistent user experience.",
+      "Mentored 3 junior developers in best practices for React and Git workflows, improving team code review pass rate by 40%.",
+      "Collaborated with product managers and designers in Agile sprints to launch 5+ new features with 100% on-time delivery."
+    ],
     "imageSrc": "history/Attentionkart.png"
   },
   {
@@ -12,7 +18,12 @@
     "organisation": "Attentionkart",
     "startDate": "Sep, 2021",
     "endDate": "Feb, 2022",
-    "experiences": [" Supported training of AI models.", "Built test interfaces using React"],
+    "experiences": [
+      "Passionate AI Research Intern with a strong foundation in machine learning, deep learning, and data analysis.",
+      "Skilled in developing AI models, conducting research experiments, and analyzing large datasets to derive actionable insights.",
+      "Have worked on Python, TensorFlow, PyTorch, and NLP techniques",
+      "Eager to contribute to innovative AI projects, collaborate with research teams, and explore cutting-edge advancements in artificial intelligence and generative AI."
+    ],
     "imageSrc": "history/Attentionkart.png"
   }
 ]
